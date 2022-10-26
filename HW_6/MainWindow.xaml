@@ -1,0 +1,22 @@
+﻿<Window x:Class="HW_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW_6"
+        mc:Ignorable="d"
+        Title="飲料訂購系統" Height="574" Width="907">
+    <Grid>
+        <GroupBox Header="飲料品項" Margin="62,146,436,38" Background="#FFC7B5F4">
+            <StackPanel x:Name="stackpanel_DrinkMenu" Margin="10,10,10,10" Background="#FFFCDFF6" Orientation="Vertical"/>
+        </GroupBox>
+        <GroupBox Header="用餐方式" Margin="62,19,436,418" Background="#FFF7DCC5">
+            <StackPanel Background="#FFFCFFCB" Height="66" Margin="9,9,9,9">
+                <RadioButton x:Name="rb1" Content="內用" Margin="10,5,10,5" Checked="RadioButton_Checked" IsChecked="True"/>
+                <RadioButton x:Name="rb2" Content="外帶" Margin="10,5,10,5" Checked="RadioButton_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="orderButton" Content="確定訂購" HorizontalAlignment="Left" Margin="556,40,0,0" VerticalAlignment="Top" Height="70" Width="250" FontSize="16" Click="orderButton_Click"/>
+        <TextBlock x:Name="displayTextBlock" HorizontalAlignment="Left" Margin="501,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="339" Width="349" FontSize="14" Background="#FFA4BAFF"/>
+    </Grid>
+</Window>
