@@ -185,7 +185,7 @@ namespace HW_6
             {
                 fullPath = dialog.FileName;
             }
-            FileStream FileStream = new FileStream(fullPath, FileMode.Append);
+            FileStream FileStream = new FileStream(fullPath, FileMode.Append);  //FileMode.Create 覆蓋寫入  FileMode.Append 接續寫入
             StreamWriter sw = new StreamWriter(FileStream, System.Text.Encoding.UTF8);
             sw.WriteLine(DateTime.Now);
             sw.WriteLine(displayTextBlock.Text);
