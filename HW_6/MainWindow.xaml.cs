@@ -114,6 +114,7 @@ namespace HW_6
                     mydrink.Add(d);
                 }
             }
+            MessageBox.Show($"偵測到{mydrink.Count}筆飲品資料");
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
